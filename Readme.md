@@ -18,3 +18,12 @@ Repository นี้ได้มีการแบ่งแยกส่วนต
 - โดยใน sub folder จะมีการเก็บ code ของแต่ละหัวข้อไว้ที่นั่น
 2. `blog` สำหรับเก็บ code สำหรับตัวอย่าง Blog Workshop และ Advance Feature ของ Blog
 
+สำหรับการลง blog นั้นให้ดำเนิน ต่อไปนี้ สำหรับ run project ขึ้นมา
+- ให้ดำเนินการเปิด folder `blog` ที่ vscode
+- เปิด terminal ของ vscode และพิมพ์ command ต่อไปนี้
+```shell
+# สำหรับลง tailwind และ start tailwind
+npm install
+npm start
+```
+- เมื่อ run เสร็จแล้วให้เปิด Live server ขึ้นมาก็จะเห็น style ที่ถูกต้องออกมาได้
