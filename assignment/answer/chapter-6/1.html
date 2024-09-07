@@ -28,10 +28,7 @@
           const month = today.getMonth() - birthdate.getMonth()
 
           if (month < 0 || (month === 0 && today.getDate() < birthdate.getDate())) {
-            // [1]
             age--
-            // [2]
-            age++
           }
 
           if (age >= 18) {
