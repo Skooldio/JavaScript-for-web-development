@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       'https://65a25d5342ecd7d7f0a771bd.mockapi.io/blogs'
     )
     const blogData = response.data
-    // 2. นำข้อมูลมาแปลงเป็น html
-
+    // 2. นำข้อมูลจาก API มาแปลงเป็น html
     let blogHTML = ''
     blogData.forEach((blog) => {
       let blogTemplate = `<div class="flex flex-col md:flex-row gap-6 w-full">
@@ -32,8 +31,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       blogHTML += blogTemplate
     })
 
+    // 3. แสดงข้อมูลจาก API ที่ได้จากข้อมูลมาในหน้าเว็บ (โดยนำข้อมูลที่ได้จากข้อมูลมาแปลงเป็น html มาแสดงในหน้าเว็บ)
     blogContainer.innerHTML = blogHTML
   } catch (error) {
+    // 4. จัดการ error ที่เกิดขึ้นในการดึงข้อมูลจาก API
     console.log('error', error)
   }
 })

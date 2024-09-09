@@ -60,13 +60,13 @@
       </div>
       <div class="flex justify-between gap-10 mb-6 mt-4">
         <input
-          onkeyup="searchBlogs(this)"
+          id="searchText"
           class="py-[7px] pl-4 w-full text-wd-black"
           type="text"
           placeholder="Search Blog..."
         />
 
-        <select onchange="sortBlogs(this)">
+        <select id="sortOption">
           <option>Sort</option>
           <option value="desc">Newest</option>
           <option value="asc">Oldest</option>
